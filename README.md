@@ -658,5 +658,3 @@ into a single business workflow.
 
 MIT
 
-
-*Deployment configuration updated.*
