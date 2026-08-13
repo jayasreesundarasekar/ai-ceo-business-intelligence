@@ -307,7 +307,7 @@ Open dashboard tabs update automatically with connection status and live toast n
 │                AI CEO Executive UI                      │
 └──────────────────────────┬───────────────────────────────┘
                            │
-                     REST + WebSocket
+                      REST + WebSocket
                            │
                            ▼
 ┌──────────────────────────────────────────────────────────┐
@@ -398,31 +398,31 @@ A representative AI CEO workflow looks like this:
 ```text
 Customer complaint / business event
                 ↓
-       Context retrieval
+        Context retrieval
                 ↓
-        Sentiment analysis
+         Sentiment analysis
                 ↓
-        Churn / risk scoring
+         Churn / risk scoring
                 ↓
-      Multi-agent evaluation
-       ↙        ↓        ↘
-    Sales     Finance    Support
-       \        |        /
-             CEO Agent
+       Multi-agent evaluation
+        ↙        ↓        ↘
+     Sales     Finance    Support
+        \        |        /
+              CEO Agent
                 ↓
-      Explainable recommendation
+       Explainable recommendation
                 ↓
-          Human approval
+           Human approval
                 ↓
-       Real-world execution
-       ↙       ↓       ↘
-    Jira     Gmail    Calendar
+        Real-world execution
+        ↙       ↓       ↘
+     Jira     Gmail    Calendar
                 ↓
-             HubSpot
+              HubSpot
                 ↓
-          Outcome tracking
+           Outcome tracking
                 ↓
-       Evaluation & calibration
+        Evaluation & calibration
 ```
 
 This demonstrates the central product principle:
@@ -464,6 +464,22 @@ SLACK_BOT_TOKEN=your_slack_bot_token
 - access tokens
 - `.env` files
 - private credentials
+
+### Production Configuration
+
+The deployed frontend is hosted on Vercel and communicates with the production backend hosted on Render.
+
+```env
+VITE_API_URL=https://ai-ceo-backend-1ouf.onrender.com
+```
+
+The production frontend is available at:
+
+**[🚀 AI CEO — Live Demo](https://ai-ceo-business-intelligence-wif4-q0lkvjtjs.vercel.app/)**
+
+The backend health endpoint is available at:
+
+**[Backend Health Check](https://ai-ceo-backend-1ouf.onrender.com/api/health)**
 
 ---
 
@@ -559,6 +575,19 @@ GitHub
 8. Test the health endpoint.
 9. Test the major AI workflows.
 10. Verify integration permissions before enabling production actions.
+
+### Current Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Database:** Supabase
+- **LLM inference:** Groq
+
+**Live application:**  
+[https://ai-ceo-business-intelligence-wif4-q0lkvjtjs.vercel.app/](https://ai-ceo-business-intelligence-wif4-q0lkvjtjs.vercel.app/)
+
+**Backend:**  
+[https://ai-ceo-backend-1ouf.onrender.com](https://ai-ceo-backend-1ouf.onrender.com)
 
 ---
 
