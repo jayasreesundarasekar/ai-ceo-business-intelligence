@@ -4,6 +4,17 @@
 
 AI CEO is a full-stack SaaS platform that goes beyond passive business analytics. It continuously monitors customer and operational signals, reasons over business data, detects risks and opportunities, recommends explainable actions, and—under human supervision—executes those actions across connected business systems.
 
+## 🌐 Live Demo
+
+**[🚀 Launch AI CEO](https://ai-ceo-business-intelligence-wif4-q0lkvjtjs.vercel.app/)**
+
+### Deployment
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Database:** Supabase
+- **AI inference:** Groq
+
 ### The core idea
 
 **Traditional BI**
